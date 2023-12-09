@@ -6,10 +6,10 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Home</a>
-      <a class="nav-item nav-link" href="#">About Us</a>
-      <a class="nav-item nav-link" href="#">Services</a>
-      <a class="nav-item nav-link" href="#">Contact Us</a>
+      <a class="nav-item nav-link active" routerLink="/home" (click)="toggleMenu()">Home</a>
+      <a class="nav-item nav-link" routerLink="/about-us" (click)="toggleMenu()">About Us</a>
+      <a class="nav-item nav-link" routerLink="/services" (click)="toggleMenu()">Services</a>
+      <a class="nav-item nav-link" routerLink="/contact-us" (click)="toggleMenu()">Contact Us</a>
     </div>
   </div>
 </nav>
