@@ -1,1 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    margin: 0;
+    .container {
+        padding: 0;
+    }
+}
+
+nav {
+    display: flex;
+    flex-direction: row-reverse;
+    button {
+        border: none;
+    }
+}
+
+.navbar-brand {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-brand img {
+    width: 88px;
+    height: 25px;
+}
+
+.navbar-toggler {
+    padding: 0;
+    position: absolute;
+    top: 15px;
+    left: 24px;
+    border: none;
+}
+
+.nav-item.nav-link {
+    margin: 10px 24px;
+}
+
+.menu {
+    height: 80px;
+    width: 100%;
+    background-color: white;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #34332F;
+    color: white;
+}
