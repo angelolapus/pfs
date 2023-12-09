@@ -12,7 +12,8 @@ import { ServicesComponent } from './pages/services/services.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeBannerComponent } from './pages/home/home-component/home-banner/home-banner.component';
 import { HomeBannerNavComponent } from './pages/home/home-component/home-banner-nav/home-banner-nav.component';
-import { HomeCardComponent } from './pages/home/home-component/home-card/home-card.component';
+import { HomeCardTextComponent } from './pages/home/home-component/home-card-text/home-card-text.component';
+import { HomeCardImgTextComponent } from './pages/home/home-component/home-card-img-text/home-card-img-text.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HomeCardComponent } from './pages/home/home-component/home-card/home-ca
     ContactComponent,
     HomeBannerComponent,
     HomeBannerNavComponent,
-    HomeCardComponent,
+    HomeCardTextComponent,
+    HomeCardImgTextComponent,
   ],
   imports: [
     BrowserModule,

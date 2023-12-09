@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomeCardComponent } from './home-card.component';
+import { HomeCardTextComponent } from './home-card-text.component';
 
 describe('HomeCardComponent', () => {
-  let component: HomeCardComponent;
-  let fixture: ComponentFixture<HomeCardComponent>;
+  let component: HomeCardTextComponent;
+  let fixture: ComponentFixture<HomeCardTextComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [HomeCardComponent]
+      declarations: [HomeCardTextComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(HomeCardComponent);
+    fixture = TestBed.createComponent(HomeCardTextComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
