@@ -12,8 +12,11 @@ import { ServicesComponent } from './pages/services/services.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeBannerComponent } from './pages/home/home-component/home-banner/home-banner.component';
 import { HomeBannerNavComponent } from './pages/home/home-component/home-banner-nav/home-banner-nav.component';
-import { HomeCardTextComponent } from './pages/home/home-component/home-card-text/home-card-text.component';
 import { HomeCardImgTextComponent } from './pages/home/home-component/home-card-img-text/home-card-img-text.component';
+import { HeaderRichTextComponent } from './components/header-rich-text/header-rich-text.component';
+import { LabeledBannerComponent } from './components/labeled-banner/labeled-banner.component';
+import { ProfileRichTextImgComponent } from './components/profile-rich-text-img/profile-rich-text-img.component';
+import { PromoRichTextImgComponent } from './components/promo-rich-text-img/promo-rich-text-img.component';
 
 @NgModule({
   declarations: [
@@ -26,8 +29,11 @@ import { HomeCardImgTextComponent } from './pages/home/home-component/home-card-
     ContactComponent,
     HomeBannerComponent,
     HomeBannerNavComponent,
-    HomeCardTextComponent,
+    HeaderRichTextComponent,
     HomeCardImgTextComponent,
+    LabeledBannerComponent,
+    ProfileRichTextImgComponent,
+    PromoRichTextImgComponent,
   ],
   imports: [
     BrowserModule,

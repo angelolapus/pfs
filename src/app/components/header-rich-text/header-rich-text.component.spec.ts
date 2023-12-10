@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomeCardTextComponent } from './home-card-text.component';
+import { HeaderRichTextComponent } from './header-rich-text.component';
 
-describe('HomeCardComponent', () => {
-  let component: HomeCardTextComponent;
-  let fixture: ComponentFixture<HomeCardTextComponent>;
+describe('HeaderRichTextComponent', () => {
+  let component: HeaderRichTextComponent;
+  let fixture: ComponentFixture<HeaderRichTextComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [HomeCardTextComponent]
+      declarations: [HeaderRichTextComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(HomeCardTextComponent);
+    fixture = TestBed.createComponent(HeaderRichTextComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
