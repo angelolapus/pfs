@@ -17,6 +17,7 @@ import { HeaderRichTextComponent } from './components/header-rich-text/header-ri
 import { LabeledBannerComponent } from './components/labeled-banner/labeled-banner.component';
 import { ProfileRichTextImgComponent } from './components/profile-rich-text-img/profile-rich-text-img.component';
 import { PromoRichTextImgComponent } from './components/promo-rich-text-img/promo-rich-text-img.component';
+import { ServicesCardComponent } from './pages/services/services-component/services-card/services-card.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { PromoRichTextImgComponent } from './components/promo-rich-text-img/prom
     LabeledBannerComponent,
     ProfileRichTextImgComponent,
     PromoRichTextImgComponent,
+    ServicesCardComponent,
   ],
   imports: [
     BrowserModule,

@@ -168,8 +168,11 @@ body {
             font-weight: 700;
             line-height: 32px;
         }
+        .profile-container {
+            padding: 0px 16px 32px;
+        }
         .profile-rich-text-img-container {
-            padding: 0 16px 56px;
+            padding: 0;
             img {
                 padding-bottom: 12px;
             }
@@ -210,7 +213,7 @@ body {
             }
         }
         .promo-rich-text-img-container {
-            padding: 40px 12px;
+            padding: 24px 12px 40px;
             h1 {
                 color: #1B1B1B;
                 text-align: center;
@@ -257,9 +260,94 @@ body {
                     padding-top: 4px;
                 }
             }
-            // .right-promo {
-            //     overflow: hidden;
-            // }
+        }
+    }
+    //services
+    .services {
+        .container.header-rich-text-container {
+            padding-bottom: 32px;
+        }
+        .labeled-banner-container {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+        .labeled-banner-container img {
+            transform: scale(0.25, 0.25) translate(-3189px, -2126px);
+        }
+        .labeled-banner-container h1 {
+            position: absolute;
+            top: 84px;
+            left: 24px;
+            color: #FFF;
+            /* H4 */
+            font-family: "DM Sans";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+        }
+        .services-card-container {
+            padding: 32px 0;
+        }
+        .services-card-container .services-text-container {
+            padding: 0 12px;
+        }
+        .services-card-container h1 {
+            color: #1B1B1B;
+            /* H4 */
+            font-family: DM Sans;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+            /* 133.333% */
+            padding-bottom: 8px;
+        }
+        .services-card-container p {
+            color: #515151;
+            /* Body 2 */
+            font-family: DM Sans;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+            /* 128.571% */
+        }
+        .services-img-container {
+            margin: 8px 0px 40px;
+            width: 100%;
+            height: 281px;
+            overflow: hidden;
+            position: relative;
+            img {
+                width: 100%;
+                max-height: 281px;
+                object-fit: cover;
+            }
+            .box {
+                width: 157px;
+                height: 157px;
+                background-color: #D3A450;
+                opacity: 100%;
+                mix-blend-mode: multiply;
+            }
+            .upper-right {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .mid-left {
+                position: absolute;
+                left: 0;
+                top: 62px;
+            }
+            .mid-right {
+                position: absolute;
+                right: 0;
+                top: 62px;
+            }
         }
     }
 }
