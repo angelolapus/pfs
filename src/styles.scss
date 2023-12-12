@@ -289,7 +289,7 @@ body {
             line-height: 32px;
         }
         .services-card-container {
-            padding: 32px 0;
+            padding: 32px 0 0;
         }
         .services-card-container .services-text-container {
             padding: 0 12px;
@@ -347,6 +347,52 @@ body {
                 position: absolute;
                 right: 0;
                 top: 62px;
+            }
+        }
+        .services-card-container .added-services-container {
+            padding: 12px 8px;
+            h1 {
+                color: #1B1B1B;
+                /* H3 */
+                font-family: "DM Sans";
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 42px;
+                /* 131.25% */
+            }
+            p {
+                color: #515151;
+                /* Body 1 */
+                font-family: "DM Sans";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                /* 150% */
+            }
+            .section1-container {
+                padding: 12px 0 16px;
+            }
+            .section2-container {
+                padding: 16px 0 12px;
+            }
+            .section2-container .service-item {
+                display: flex;
+                padding-bottom: 8px;
+                .services-icon {
+                    padding-right: 8px;
+                }
+                .services-content {
+                    h1 {
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 24px;
+                        margin-bottom: 4px;
+                        padding-bottom: 0;
+                    }
+                    padding-left: 8px;
+                }
             }
         }
     }

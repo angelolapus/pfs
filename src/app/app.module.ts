@@ -18,6 +18,7 @@ import { LabeledBannerComponent } from './components/labeled-banner/labeled-bann
 import { ProfileRichTextImgComponent } from './components/profile-rich-text-img/profile-rich-text-img.component';
 import { PromoRichTextImgComponent } from './components/promo-rich-text-img/promo-rich-text-img.component';
 import { ServicesCardComponent } from './pages/services/services-component/services-card/services-card.component';
+import { ServicesItemComponent } from './pages/services/services-component/services-item/services-item.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { ServicesCardComponent } from './pages/services/services-component/servi
     ProfileRichTextImgComponent,
     PromoRichTextImgComponent,
     ServicesCardComponent,
+    ServicesItemComponent,
   ],
   imports: [
     BrowserModule,
