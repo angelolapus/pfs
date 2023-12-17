@@ -20,6 +20,7 @@ import { PromoRichTextImgComponent } from './components/promo-rich-text-img/prom
 import { ServicesCardComponent } from './pages/services/services-component/services-card/services-card.component';
 import { ServicesItemComponent } from './pages/services/services-component/services-item/services-item.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { QualityAndPoliciesComponent } from './pages/quality-and-policies/quality-and-policies.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     PromoRichTextImgComponent,
     ServicesCardComponent,
     ServicesItemComponent,
+    QualityAndPoliciesComponent,
   ],
   imports: [
     BrowserModule,
