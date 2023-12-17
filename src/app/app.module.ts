@@ -19,6 +19,7 @@ import { ProfileRichTextImgComponent } from './components/profile-rich-text-img/
 import { PromoRichTextImgComponent } from './components/promo-rich-text-img/promo-rich-text-img.component';
 import { ServicesCardComponent } from './pages/services/services-component/services-card/services-card.component';
 import { ServicesItemComponent } from './pages/services/services-component/services-item/services-item.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { ServicesItemComponent } from './pages/services/services-component/servi
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration()

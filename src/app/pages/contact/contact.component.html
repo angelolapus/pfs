@@ -1,1 +1,75 @@
-<p>contact works!</p>
+<div class="container contact-us">
+    <app-labeled-banner>
+         <img src="../../../assets/images/contact-us-banner.png">
+          <h1>Contact us</h1>
+    </app-labeled-banner>
+
+    <div class="property-container">
+        
+        <div class="promo">
+            <div class="promo-image-container">
+                <img src="../../../assets/images/property-promo.png">
+            </div>
+
+            <div class="address-container">
+            <h4>PROPERTY FACILITY SERVICES PTE LTD</h4><br>
+            <p>430 Lorong 6 Toa Payoh, Building,<br>
+            #10-01 OrangeTee, 319402<br><br>
+            <span class="label-title">Telephone:</span><br>
+            +65 6221 1313<br><br>
+            <span class="label-title">Email:</span><br>
+            xianyong.lim&#64;pfspl.com.sg<br><br>
+            <span class="label-title">Operating Hours:</span><br>
+            8.30am to 5.30pm (Mondays to Fridays)
+            </p>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="connect-container">
+        <div class="message-container">
+            <h3>CONNECT WITH US!</h3>
+            <p>We would be pleased to meet up with you<br>
+             for a private consultation, to find out more<br>
+            about your needs and how we can customise<br> 
+            our solutions to meet better meet your<br>
+            requirements. Please send us your enquiries by<br>
+            submit the form below.</p>
+        </div>
+
+        <div class="form-container">
+            <div class="row">
+                <label for="name">Name* </label><br>
+                <input id="name" type="text" [formControl]="name">
+
+                <label for="company">Company / MCST: </label><br>
+                <input id="company" type="text" [formControl]="company">
+            </div>
+
+            <div class="row">
+                <label for="email">Email* </label><br>
+                <input id="email" type="text" [formControl]="email">
+
+                <label for="phone">Phone</label><br>
+                <input id="phone" type="text" [formControl]="phone">
+            </div>
+
+             <div class="row">
+                <label for="email">Message* </label><br>
+                <textarea id="email" type="text" [formControl]="message"></textarea>
+            </div>
+
+            <div class="row">
+                <label for="email">Verification code* </label><br>
+                <input id="verificationCode" type="text" [formControl]="verificationCode">
+
+                <label class="captcha">{{captchaValue}}</label><br>
+            </div>
+
+            <div class="row">
+                <button (click)="submit()">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
