@@ -5,6 +5,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { QualityAndPoliciesComponent } from './pages/quality-and-policies/quality-and-policies.component';
+import { PropertiesComponent } from './pages/properties/properties.component';
 
 const routes: Routes = [
   {path:'',redirectTo: '/home', pathMatch: 'full'},
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path:'services', component: ServicesComponent},
   {path:'contact-us', component: ContactComponent},
   {path:'quality-and-policies', component: QualityAndPoliciesComponent},
+  {path:'properties', component: PropertiesComponent},
 ];
 
 @NgModule({

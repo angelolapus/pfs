@@ -21,6 +21,9 @@ import { ServicesCardComponent } from './pages/services/services-component/servi
 import { ServicesItemComponent } from './pages/services/services-component/services-item/services-item.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { QualityAndPoliciesComponent } from './pages/quality-and-policies/quality-and-policies.component';
+import { PropertiesComponent } from './pages/properties/properties.component';
+import { PropertyTitleComponent } from './pages/properties/properties-component/property-title/property-title.component';
+import { PropertyItemComponent } from './pages/properties/properties-component/property-item/property-item.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +44,9 @@ import { QualityAndPoliciesComponent } from './pages/quality-and-policies/qualit
     ServicesCardComponent,
     ServicesItemComponent,
     QualityAndPoliciesComponent,
+    PropertiesComponent,
+    PropertyTitleComponent,
+    PropertyItemComponent,
   ],
   imports: [
     BrowserModule,
