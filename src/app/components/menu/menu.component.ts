@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { environment } from '../../../environments/environment';
 
 @Component({
@@ -35,10 +35,19 @@ export class MenuComponent implements OnInit {
     
   }
 
-  changePage(){
+  changePage(_name:string){
     let nav = document.getElementsByClassName('navbar-collapse');
     nav.item(0)?.classList.toggle("show");
     this.isMenuShow = !this.isMenuShow;
+
+    
+    if(document.body.classList.contains("home")){
+      document.body.classList.remove("home");
+    }else if (document.body.classList.contains("otherPage")){
+      document.body.classList.remove("otherPage");
+    }
+
+    document.body.classList.add(_name);
   }
 
 }

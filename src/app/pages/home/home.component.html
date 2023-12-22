@@ -3,41 +3,54 @@
 
     <app-header-rich-text>
          <h1>WE ARE COMMITED</h1>
-         <p>Our commitment <br> is  shaped by <br> your envisioned future. </p>
+         <p>Our commitment <br class="d-sm-block d-md-block d-lg-none"> is  shaped by <br> your envisioned future. </p>
     </app-header-rich-text>
 
     <app-home-banner-nav></app-home-banner-nav>
 
     <app-header-rich-text>
          <h1>OUR SERVICES</h1>
-         <p>Creating value for your<br>company</p>
+         <p>Creating value for your<br class="d-sm-block d-md-block d-lg-none">company</p>
     </app-header-rich-text>
 
-    <app-home-card-img-text>
-          <img src="{{envPath}}/images/engineer.png">
-          <div class="box-lower-right"></div>
-          <h1>Integrated Facility Management</h1>
-    </app-home-card-img-text>
+      <div class="home-card-collection">
+            <app-home-card-img-text>
+                  <div class="img-container">
+                        <img src="{{envPath}}/images/engineer.png">
+                        <div class="box-lower-right"></div>
+                  </div>
+                  <h1>Integrated Facility Management</h1>
+            </app-home-card-img-text>
 
 
-     <app-home-card-img-text>
-          <img src="{{envPath}}/images/property.png">
-          <div class="box-upper-left"></div>
-          <h1>Property Management</h1>
-    </app-home-card-img-text>
+            <app-home-card-img-text>
+                  <div class="img-container">
+                        <img src="{{envPath}}/images/property.png">
+                        <div class="box-upper-left"></div>
+                  </div>
+                  <h1>Property Management</h1>
+            </app-home-card-img-text>
 
-    <app-home-card-img-text>
-          <img src="{{envPath}}/images/accounting.png">
-           <div class="box-lower-right"></div>
-          <h1>Trust Accounting</h1>
-    </app-home-card-img-text>
+            
+      </div>
 
-    <app-home-card-img-text>
-          <img src="{{envPath}}/images/management.png">
-           <div class="box-upper-left"></div>
-          <h1>Project Management for <br> Upgrading & <br> Improvement works</h1>
-    </app-home-card-img-text>
+      <div class="home-card-collection">
+            <app-home-card-img-text>
+                  <div class="img-container">
+                        <img src="{{envPath}}/images/accounting.png">
+                        <div class="box-lower-right"></div>
+                  </div>
+                  <h1>Trust Accounting</h1>
+            </app-home-card-img-text>
 
+            <app-home-card-img-text>
+                  <div class="img-container">
+                  <img src="{{envPath}}/images/management.png">
+                  <div class="box-upper-left"></div>
+                  </div>
+                  <h1>Project Management for <br class="d-sm-block d-md-block d-lg-none"> Upgrading & <br> Improvement works</h1>
+            </app-home-card-img-text>
+      </div>
       <div class="row">
                 <button>Read More</button>
       </div>
