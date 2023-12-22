@@ -22,15 +22,23 @@ export class MenuComponent implements OnInit {
   }
   toggleMenu(){
     console.log('toggle');
-    let test = document.getElementsByClassName('navbar-collapse');
+    let nav = document.getElementsByClassName('navbar-collapse');
 
     this.isMenuShow = !this.isMenuShow;
     if(this.isMenuShow){
-      test.item(0)?.classList.add("show");
+      nav.item(0)?.classList.add("show");
+      nav.item(0)?.classList.remove("hidden");
     }else{
-      test.item(0)?.classList.remove("show");
+      nav.item(0)?.classList.remove("show");
+      nav.item(0)?.classList.add("hidden");
     }
     
+  }
+
+  changePage(){
+    let nav = document.getElementsByClassName('navbar-collapse');
+    nav.item(0)?.classList.toggle("show");
+    this.isMenuShow = !this.isMenuShow;
   }
 
 }
