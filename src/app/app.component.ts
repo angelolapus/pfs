@@ -17,14 +17,10 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(){
-    
-
     this.router.events
     .pipe(filter(event => event instanceof NavigationEnd))
     .subscribe((event:any) => 
       {
-          
-        console.log(event.url);
         if(event.url == '/home' || event.url == '/'){
           this.document.body.classList.add("home");
           this.document.body.classList.remove("otherPage");
@@ -32,7 +28,41 @@ export class AppComponent implements OnInit {
           this.document.body.classList.remove("home");
           this.document.body.classList.add("otherPage")
         }
-      });
+        this.removeActive();
+        if(event.url == '/about-us'){
+          let element = this.document.querySelector('.aboutusLink');
+          element?.classList.add('active');
+        }else  if(event.url == '/contact-us'){
+          let element = this.document.querySelector('.contactLink');
+          element?.classList.add('active');
+        }
+      }
+    );
+
+
+      let elements = this.document.querySelectorAll('.nav-link')
+
+      elements.forEach(el => {
+        el.addEventListener('click', () => {
+          elements.forEach(el => el.classList.remove('active'))
+          el.classList.add('active')
+
+          let subMenu = this.document.querySelector('.subnav-content');
+          subMenu?.classList.remove('show');
+          if(el.classList.contains('servicesLink')){
+           
+            subMenu?.classList.add('show');
+          }
+        });
+      })
+  }
+
+  removeActive(){
+    let elements = this.document.querySelectorAll('.nav-item')
+
+    elements.forEach(el => {
+      el.classList.remove('active');
+    })
   }
 
 }

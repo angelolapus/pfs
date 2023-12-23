@@ -128,6 +128,9 @@ body {
 
 //desktop
 @media all and (min-width: 1024px) and (max-width: 1280px) {
+    .home .menu .navbar-expand-lg .navbar-collapse {
+        right: 0px;
+    }
     .otherPage .menu .navbar-expand-lg .navbar-collapse {
         right: 0px;
     }
@@ -176,6 +179,33 @@ body {
         top: 50px;
         width: 100%;
         z-index: 999;
+    }
+    .navbar-collapse.show {
+        animation: expand 0.3s ease;
+    }
+    .navbar-collapse.hidden {
+        animation: close 0.3s ease;
+        visibility: visible;
+    }
+    @keyframes expand {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes close {
+        from {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+        }
+        to {
+            visibility: hidden;
+            display: none;
+            opacity: 0;
+        }
     }
     .nav-item.nav-link {
         margin: 10px 24px;
@@ -1619,7 +1649,16 @@ body {
         font-size: 24px;
         font-weight: 700;
         line-height: 32px;
-        word-wrap: break-word
+        word-wrap: break-word;
+        border-bottom: none;
+    }
+    .otherPage .container .nav-item.nav-link.active {
+        color: #96702A;
+        border-bottom: 1px solid;
+    }
+    .home .container .nav-item.nav-link.active {
+        color: #EBC98D;
+        border-bottom: 1px solid;
     }
     .otherPage .nav-item.nav-link {
         color: #515151;
@@ -1627,6 +1666,28 @@ body {
     .subnav-content {
         display: none;
         padding-left: 40px;
+    }
+    .otherPage .subnav-content.show {
+        display: block;
+        position: absolute;
+        top: 86px;
+        right: 150px;
+        a {
+            background-color: white;
+            border-bottom: 1px solid black;
+            margin: 0;
+        }
+    }
+    .home .subnav-content.show {
+        display: block;
+        position: absolute;
+        top: 86px;
+        right: 150px;
+        a {
+            background-color: rgba(27, 27, 27, 0.32);
+            border-bottom: 1px solid black;
+            margin: 0;
+        }
     }
     .subnav-content .nav-item.nav-link {
         font-size: 18px;

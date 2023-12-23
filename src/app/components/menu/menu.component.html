@@ -13,15 +13,19 @@
  
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link" routerLink="/home">Home</a>
-      <a class="nav-item nav-link" routerLink="/about-us">About Us</a>
-      <a class="nav-item nav-link">Services</a>
+      <a class="nav-item nav-link homeLink active" routerLink="/home">Home</a>
+      <a class="nav-item nav-link aboutusLink" routerLink="/about-us">About Us</a>
+      <a class="nav-item nav-link servicesLink">Services 
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill d-none d-lg-inline" viewBox="0 0 16 16">
+          <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+        </svg>
+      </a>
 
         <div class="subnav-content">
           <a class="nav-item nav-link" routerLink="/services">Our Services</a>
           <a class="nav-item nav-link" routerLink="/properties">Property Management</a>
         </div>
-      <a class="nav-item nav-link" routerLink="/contact-us">Contact Us</a>
+      <a class="nav-item nav-link contactLink" routerLink="/contact-us">Contact Us</a>
     </div>
   </div>
 </nav>
