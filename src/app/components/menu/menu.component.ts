@@ -34,10 +34,14 @@ export class MenuComponent implements OnInit {
     
   }
 
-  changePage(_name:string){
+  changePage(){
     let nav = document.getElementsByClassName('navbar-collapse');
-    nav.item(0)?.classList.toggle("show");
+    // let navCol = document.getElementsByClassName('navbar-collapse');
+    // navCol.item(0)?.classList.toggle("show");
     this.isMenuShow = !this.isMenuShow;
+    nav.item(0)?.classList.remove("show");
+    nav.item(0)?.classList.add("hidden");
+    
   }
 
 }
