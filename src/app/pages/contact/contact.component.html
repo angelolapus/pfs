@@ -40,19 +40,26 @@
 
         <div class="form-container">
             <div class="row">
+                <div class="form-item">
                 <label for="name">Name* </label><br>
                 <input id="name" type="text" [formControl]="name">
-
+                </div>
+                
+                <div class="form-item">
                 <label for="company">Company / MCST: </label><br>
                 <input id="company" type="text" [formControl]="company">
+                </div>
             </div>
 
             <div class="row">
+                <div class="form-item">
                 <label for="email">Email* </label><br>
                 <input id="email" type="text" [formControl]="email">
-
+                </div>
+                <div class="form-item">
                 <label for="phone">Phone</label><br>
                 <input id="phone" type="text" [formControl]="phone">
+                </div>
             </div>
 
              <div class="row">
@@ -61,10 +68,13 @@
             </div>
 
             <div class="row">
+                <div class="form-item">
                 <label for="email">Verification code* </label><br>
                 <input id="verificationCode" type="text" [formControl]="verificationCode">
-
+                </div>
+                <div class="form-item">
                 <label class="captcha">{{captchaValue}}</label><br>
+                </div>
             </div>
 
             <div class="row">
