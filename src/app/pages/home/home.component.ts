@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from '../../../environments/environment';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,7 +8,7 @@ import { environment } from '../../../environments/environment';
 })
 export class HomeComponent implements OnInit{
   envPath:any;
-  constructor(){
+  constructor(private router: Router){
 
   }
 
@@ -17,5 +18,11 @@ export class HomeComponent implements OnInit{
     }else{
       this.envPath = "../assets"
     }
+  }
+
+  readmore(){
+    this.router.navigateByUrl('/services');
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
 }
