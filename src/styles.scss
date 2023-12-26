@@ -930,9 +930,9 @@ body {
             }
             p {
                 padding-top: 18px;
-                font-size: 1.2em;
+                font-size: 14px;
                 color: #B0B0B0;
-                line-height: 1.5em;
+                line-height: 18px;
                 font-weight: 700;
             }
         }
@@ -940,10 +940,10 @@ body {
             padding: 15px 40px 40px;
             a {
                 color: #B0B0B0;
-                font-size: 1.2em;
+                font-size: 18px;
                 text-decoration: none;
                 font-weight: 700;
-                line-height: 2em;
+                line-height: 28px;
                 padding: 12px 0;
             }
             .footer-icons {
@@ -1072,9 +1072,7 @@ body {
             padding-top: 24px;
             text-align: center;
             color: #000;
-            font-family: "DM Sans";
-            font-size: 2em;
-            font-style: normal;
+            font-size: 24px;
             font-weight: 700;
             line-height: 36px;
             /* 150% */
@@ -1110,12 +1108,12 @@ body {
         }
         .labeled-banner-container {
             width: 100%;
-            height: 400px;
+            height: 200px;
             overflow: hidden;
             position: relative;
-            -webkit-box-shadow: inset 0px 0px 85px rgba(0, 0, 0, 0.4);
-            -moz-box-shadow: inset 0px 0px 85px rgba(0, 0, 0, 0.4);
-            box-shadow: inset 0px 0px 255px rgba(0, 0, 0, 100);
+            -webkit-box-shadow: inset 0px 0px 155px rgba(0, 0, 0, 1);
+            -moz-box-shadow: inset 0px 0px 155px rgba(0, 0, 0, 1);
+            box-shadow: inset 0px 0px 155px rgba(0, 0, 0, 1);
             line-height: 0;
             display: inline-block;
         }
@@ -1126,12 +1124,12 @@ body {
         }
         .labeled-banner-container h1 {
             position: absolute;
-            top: 205px;
+            top: 84px;
             left: 24px;
             color: #FFF;
             /* H4 */
             font-family: "DM Sans";
-            font-size: 3em;
+            font-size: 24px;
             font-style: normal;
             font-weight: 700;
             line-height: 32px;
@@ -1148,32 +1146,25 @@ body {
                 padding-top: 12px;
                 padding-bottom: 2px;
                 color: #1B1B1B;
-                /* H3 */
-                font-size: 2em;
-                font-style: normal;
+                font-size: 24px;
                 font-weight: 700;
                 line-height: 42px;
-                /* 131.25% */
             }
             h2 {
                 padding-top: 2px;
                 padding-bottom: 8px;
                 color: #515151;
-                /* H5 */
-                font-size: 1.5em;
-                font-style: normal;
+                font-size: 18px;
                 font-weight: 700;
                 line-height: 28px;
-                /* 155.556% */
             }
             p {
                 padding-top: 8px;
                 color: #515151;
                 /* Body 1 */
-                font-size: 1.5em;
-                font-style: normal;
+                font-size: 16px;
                 font-weight: 400;
-                line-height: 1.5em;
+                line-height: 24px;
                 padding-bottom: 28px;
             }
         }
@@ -1182,8 +1173,7 @@ body {
             h1 {
                 color: #1B1B1B;
                 text-align: center;
-                font-size: 2em;
-                font-style: normal;
+                font-size: 32px;
                 font-weight: 700;
                 line-height: 42px;
                 padding-bottom: 20px;
@@ -1201,8 +1191,7 @@ body {
                 h1 {
                     text-align: left;
                     color: #1B1B1B;
-                    font-size: 2em;
-                    font-style: normal;
+                    font-size: 24px;
                     font-weight: 700;
                     line-height: 32px;
                     padding-top: 12px;
@@ -1210,7 +1199,7 @@ body {
                 }
                 p {
                     color: #515151;
-                    font-size: 1.5em;
+                    font-size: 16px;
                     font-style: normal;
                     font-weight: 400;
                     line-height: 24px;
@@ -1247,7 +1236,7 @@ body {
             left: 24px;
             color: #FFF;
             /* H4 */
-            font-size: 3em;
+            font-size: 24px;
             font-style: normal;
             font-weight: 700;
             line-height: 32px;
@@ -1261,20 +1250,20 @@ body {
         .services-card-container h1 {
             color: #1B1B1B;
             /* H4 */
-            font-size: 2.5em;
+            font-size: 24px;
             font-style: normal;
             font-weight: 700;
-            line-height: 1.5em;
+            line-height: 32px;
             /* 133.333% */
             padding-bottom: 8px;
         }
         .services-card-container p {
             color: #515151;
             /* Body 2 */
-            font-size: 1.5em;
+            font-size: 14px;
             font-style: normal;
             font-weight: 400;
-            line-height: 1.2em;
+            line-height: 18px;
             /* 128.571% */
         }
         .services-img-container {
@@ -1335,11 +1324,11 @@ body {
             .section1-container {
                 padding: 12px 0 16px;
                 h1 {
-                    font-size: 2em;
+                    font-size: 32px;
                 }
                 p {
-                    font-size: 1.5em;
-                    line-height: 1.2em;
+                    font-size: 16px;
+                    line-height: 24px;
                 }
             }
             .section2-container {
@@ -1357,15 +1346,15 @@ body {
                 }
                 .services-content {
                     h1 {
-                        font-size: 1.8em;
+                        font-size: 16px;
                         font-weight: 700;
-                        line-height: 2em;
+                        line-height: 24px;
                         margin-bottom: 4px;
                         padding-bottom: 0;
                     }
                     p {
-                        font-size: 1.5em;
-                        line-height: 1.2em;
+                        font-size: 14px;
+                        line-height: 18px;
                     }
                     padding-left: 10px;
                 }
@@ -1397,7 +1386,7 @@ body {
             color: #FFF;
             /* H4 */
             font-family: "DM Sans";
-            font-size: 3em;
+            font-size: 24px;
             font-style: normal;
             font-weight: 700;
             line-height: 32px;
@@ -1420,7 +1409,7 @@ body {
         .address-container {
             padding: 40px 12px 8px;
             h4 {
-                font-size: 2em;
+                font-size: 24px;
             }
             .label-title {
                 color: #515151;
@@ -1431,7 +1420,7 @@ body {
                 word-wrap: break-word
             }
             P {
-                font-size: 1.2em;
+                font-size: 16px;
             }
         }
         .connect-container {
@@ -1449,7 +1438,7 @@ body {
     .quality {
         .labeled-banner-container {
             width: 100%;
-            height: 400px;
+            height: 200px;
             overflow: hidden;
             position: relative;
             -webkit-box-shadow: inset 0px 0 234.2px rgb(0, 0, 0);
@@ -1464,13 +1453,10 @@ body {
         }
         .labeled-banner-container h1 {
             position: absolute;
-            top: 204px;
+            top: 94px;
             left: 24px;
             color: #FFF;
-            /* H4 */
-            font-family: "DM Sans";
-            font-size: 2em;
-            font-style: normal;
+            font-size: 24px;
             font-weight: 700;
             line-height: 32px;
         }
@@ -1478,11 +1464,11 @@ body {
             padding: 32px 12px;
             h4 {
                 margin-bottom: 16px;
-                font-size: 1.5em;
+                font-size: 24px;
             }
             p {
                 font-size: 16px;
-                font-size: 1.2em;
+                font-size: 24px;
             }
         }
     }
@@ -1490,27 +1476,26 @@ body {
     .properties {
         .labeled-banner-container {
             width: 100%;
-            height: 400px;
+            height: 200px;
             overflow: hidden;
             position: relative;
-            -webkit-box-shadow: inset 0px 0px 85px rgba(0, 0, 0, 0.4);
-            -moz-box-shadow: inset 0px 0px 85px rgba(0, 0, 0, 0.4);
-            box-shadow: inset 0px 0px 205px rgb(0, 0, 0);
+            -webkit-box-shadow: inset 0px 0px 125px rgba(0, 0, 0, 0.4);
+            -moz-box-shadow: inset 0px 0px 125px rgba(0, 0, 0, 0.4);
+            box-shadow: inset 0px 0px 125px rgb(0, 0, 0);
             line-height: 0;
             display: inline-block;
         }
         .labeled-banner-container img {
-            transform: scale(0.4, 0.4) translate(-1508px, -1330px);
+            transform: scale(0.4, 0.4) translate(-1508px, -1630px);
             position: relative;
             z-index: -1;
         }
         .labeled-banner-container h1 {
             position: absolute;
-            top: 205px;
+            top: 84px;
             left: 24px;
             color: #FFF;
-            font-size: 3em;
-            font-style: normal;
+            font-size: 24px;
             font-weight: 700;
             line-height: 32px;
         }
@@ -1525,24 +1510,24 @@ body {
                 }
                 h5 {
                     color: #D3A450;
-                    font-size: 2em;
+                    font-size: 18px;
                     font-style: normal;
                     font-weight: 700;
-                    line-height: 2em;
+                    line-height: 28px;
                 }
                 h4 {
                     color: #1B1B1B;
-                    font-size: 2em;
+                    font-size: 24px;
                     font-style: normal;
                     font-weight: 700;
-                    line-height: 1.2em;
+                    line-height: 32px;
                 }
                 p {
                     color: #515151;
-                    font-size: 1.2em;
+                    font-size: 16px;
                     font-style: normal;
                     font-weight: 400;
-                    line-height: 1.2em;
+                    line-height: 24px;
                 }
             }
         }
@@ -1560,6 +1545,7 @@ body {
             padding: 13px 0;
             margin: 0;
             font-weight: 700;
+            font-size: 18px;
         }
         .property-list-container ul {
             padding: 0;
@@ -1578,10 +1564,10 @@ body {
         }
         .property-list-container p {
             color: #515151;
-            font-size: 1.5em;
+            font-size: 16px;
             font-family: "DM Sans";
             font-weight: 400;
-            line-height: 2em;
+            line-height: 24px;
             word-wrap: break-word;
             position: relative;
             left: 12px;
@@ -1730,9 +1716,9 @@ body {
             }
             p {
                 padding-top: 18px;
-                font-size: 1.2em;
+                font-size: 14px;
                 color: #B0B0B0;
-                line-height: 1.5em;
+                line-height: 18px;
                 font-weight: 700;
             }
         }
@@ -1747,10 +1733,10 @@ body {
             }
             a {
                 color: #B0B0B0;
-                font-size: 1.2em;
+                font-size: 18px;
                 text-decoration: none;
                 font-weight: 700;
-                line-height: 2em;
+                line-height: 28px;
                 padding-top: 32px;
                 padding-left: 40px;
             }
@@ -1789,14 +1775,12 @@ body {
             left: 0;
             width: 100%;
             h1 {
-                font-family: 'DM Sans';
                 color: white;
                 text-align: center;
                 font-weight: 700;
                 line-height: 42px;
             }
             p {
-                font-family: 'DM Sans';
                 color: white;
                 text-align: center;
                 font-size: 16px;
@@ -2220,34 +2204,19 @@ body {
             display: flex;
             h1 {
                 color: #1B1B1B;
-                /* H3 */
-                font-family: "DM Sans";
                 font-size: 32px;
-                font-style: normal;
                 font-weight: 700;
                 line-height: 42px;
                 /* 131.25% */
             }
             p {
                 color: #515151;
-                /* Body 1 */
-                font-family: "DM Sans";
                 font-size: 16px;
-                font-style: normal;
                 font-weight: 400;
                 line-height: 24px;
-                /* 150% */
             }
             .section1-container {
-                // padding: 12px 0 16px;
                 padding-right: 44px;
-                // h1 {
-                //     font-size: 2em;
-                // }
-                // p {
-                //     font-size: 1.5em;
-                //     line-height: 1.2em;
-                // }
             }
             .section2-container {
                 // padding: 16px 0 12px;
@@ -2703,9 +2672,9 @@ body {
             }
             p {
                 padding-top: 18px;
-                font-size: 1.2em;
+                font-size: 14px;
                 color: #B0B0B0;
-                line-height: 1.5em;
+                line-height: 18px;
                 font-weight: 700;
             }
         }
@@ -2720,10 +2689,10 @@ body {
             }
             a {
                 color: #B0B0B0;
-                font-size: 1.2em;
+                font-size: 18px;
                 text-decoration: none;
                 font-weight: 700;
-                line-height: 2em;
+                line-height: 28px;
                 padding-top: 32px;
                 padding-left: 40px;
             }
@@ -3212,18 +3181,9 @@ body {
                 /* 150% */
             }
             .section1-container {
-                // padding: 12px 0 16px;
                 padding-right: 44px;
-                // h1 {
-                //     font-size: 2em;
-                // }
-                // p {
-                //     font-size: 1.5em;
-                //     line-height: 1.2em;
-                // }
             }
             .section2-container {
-                // padding: 16px 0 12px;
                 padding-left: 44px;
                 .row1-container {
                     display: flex;
