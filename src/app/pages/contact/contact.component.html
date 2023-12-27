@@ -37,48 +37,68 @@
             requirements. Please send us your enquiries by<br class="d-none d-sm-block d-md-none">
             submit the form below.</p>
         </div>
-
+<div [formGroup]="contactForm">
         <div class="form-container">
             <div class="row">
                 <div class="form-item">
                 <label for="name">Name* </label><br>
-                <input id="name" type="text" [formControl]="name">
-                @if(!name.valid && name.dirty){
-                    <br>
-                    <label for="name" style="color:red">This field is required</label>
-                }
+                <input id="name" type="text" formControlName="name">
+                    @if(contactForm.controls['name'].hasError('required') && (contactForm.controls['name'].dirty || contactForm.controls['name'].touched)){
+                            <span class="text-danger">This field is required</span>
+                    }
                 </div>
                 
                 <div class="form-item">
                 <label for="company">Company / MCST: </label><br>
-                <input id="company" type="text" [formControl]="company">
-                @if(!company.valid && company.dirty){
-                    <br>
-                    <label for="company" style="color:red">This field is required</label>
-                }
+                <input id="company" type="text" formControlName="company">
+                     @if(contactForm.controls['company'].hasError('required') && (contactForm.controls['company'].dirty || contactForm.controls['company'].touched)){
+                            <span class="text-danger">This field is required</span>
+                    }
                 </div>
             </div>
 
             <div class="row">
                 <div class="form-item">
                 <label for="email">Email* </label><br>
-                <input id="email" type="text" [formControl]="email">
+                <input id="email" type="text" formControlName="email">
+                		@if(contactForm.controls['email'].hasError('required') && (contactForm.controls['email'].dirty || contactForm.controls['email'].touched)){
+                            <span class="text-danger">This field is required</span>
+                        }
+                        @if(contactForm.controls['email'].hasError('pattern') && (contactForm.controls['email'].dirty || contactForm.controls['email'].touched)){
+                            <span class="text-danger">Please enter valid email address or phone number</span>
+                        }
+			            
                 </div>
                 <div class="form-item">
                 <label for="phone">Phone</label><br>
-                <input id="phone" type="text" [formControl]="phone">
+                <input id="phone" type="text" formControlName="phone">
+                    @if(contactForm.controls['phone'].hasError('required') && (contactForm.controls['phone'].dirty || contactForm.controls['phone'].touched)){
+                            <span class="text-danger">This field is required</span>
+                        }
+                        @if(contactForm.controls['phone'].hasError('pattern') && (contactForm.controls['phone'].dirty || contactForm.controls['phone'].touched)){
+                            <span class="text-danger">Please enter valid email address or phone number</span>
+                        }
                 </div>
             </div>
 
              <div class="row">
                 <label for="email">Message* </label><br>
-                <textarea id="email" type="text" [formControl]="message"></textarea>
+                <textarea id="email" type="text" formControlName="message"></textarea>
+                    @if(contactForm.controls['message'].hasError('required') && (contactForm.controls['message'].dirty || contactForm.controls['message'].touched)){
+                            <span class="text-danger">This field is required</span>
+                    }
             </div>
 
             <div class="row">
                 <div class="form-item">
                 <label for="email">Verification code* </label><br>
-                <input id="verificationCode" type="text" [formControl]="verificationCode">
+                <input id="verificationCode" type="text" formControlName="verificationCode">
+                    @if(contactForm.controls['verificationCode'].hasError('required') && (contactForm.controls['verificationCode'].dirty || contactForm.controls['verificationCode'].touched)){
+                            <span class="text-danger">This field is required</span>
+                    }
+                    @if(contactForm.controls['verificationCode'].hasError('stringEquality') && (contactForm.controls['verificationCode'].dirty || contactForm.controls['verificationCode'].touched)){
+                            <span class="text-danger">Incorrect captcha</span>
+                        }
                 </div>
                 <div class="form-item">
                 <label class="captcha">{{captchaValue}}</label><br>
@@ -87,7 +107,11 @@
 
             <div class="row">
                 <button (click)="submit()">Submit</button>
+                @if(formError){
+                        <span class="text-danger text-center">Enter the correct value first</span>
+                }
             </div>
         </div>
+</div>
     </div>
 </div>

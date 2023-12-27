@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AbstractControl, FormControl, ValidationErrors, ValidatorFn, Validators } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormControl, FormGroup, ValidationErrors, ValidatorFn, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -7,6 +7,7 @@ import { AbstractControl, FormControl, ValidationErrors, ValidatorFn, Validators
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent implements OnInit {
+  contactForm:FormGroup;
   name = new FormControl('', [Validators.required]);
   company = new FormControl('',[Validators.required]);
   email = new FormControl('',[Validators.required]);
@@ -17,12 +18,56 @@ export class ContactComponent implements OnInit {
 
   captchaValue = "";
 
-  constructor(){
-
+  phoneEmailRegex = /^(\d{10}|\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3}))$/;
+  formError = false;
+  constructor(fb:FormBuilder){
+    this.captchaValue = this.rotateCaptcha(6);
+    this.contactForm = fb.group({
+      name: [
+        null,
+        Validators.compose([
+          Validators.required,
+        ]),
+      ],
+      company: [
+        null,
+        Validators.compose([
+          Validators.required,
+        ]),
+      ],
+      email: [
+        null,
+        Validators.compose([
+          Validators.required,
+          Validators.pattern(this.phoneEmailRegex),
+        ]),
+      ],
+      phone: [
+        null,
+        Validators.compose([
+          Validators.required,
+          Validators.pattern(this.phoneEmailRegex),
+        ]),
+      ],
+      message: [
+        null,
+        Validators.compose([
+          Validators.required,
+        ]),
+      ],
+      verificationCode: [
+        null,
+        Validators.compose([
+          Validators.required,
+          this.stringEqualityValidator(this.captchaValue)
+        ]),
+      ]
+    });
+  
   }
 
   ngOnInit(): void {
-    this.captchaValue = this.rotateCaptcha(6);
+    
   }
 
   rotateCaptcha(length:number) {
@@ -38,18 +83,38 @@ export class ContactComponent implements OnInit {
 }
 
   submit(){
-    this.name.valid;
-    console.log(this.name.valid);
-  //  this.sendMessage();
+    if(this.contactForm.valid){
+      
+      this.formError = false;
+      this.sendMessage();
+      this.reset();
+    }else{
+      this.formError = true;
+    }
+    
     
   }
 
   sendMessage(){
-    let message = this.message.value 
-    + "\nName: " + this.name.value
-    + "\nCompany: " + this.company.value
-    + "\nEmail: " + this.email.value
-    + "\nPhone: " + this.phone.value
-    window.location.href = "mailto:contactme@pfspl.com.sg?subject=Inquiry&body="+ encodeURIComponent(message);
+    let message = "\nMessage: " + this.contactForm.controls['message'].value 
+    + "\nName: " + this.contactForm.controls['name'].value
+    + "\nCompany: " + this.contactForm.controls['company'].value
+    + "\nEmail: " + this.contactForm.controls['email'].value
+    + "\nPhone: " + this.contactForm.controls['phone'].value
+    window.location.href = "mailto:contactme@pfspl.com.sg,xianyong.lim@pfspl.com.sg?subject=Inquiry&body="+ encodeURIComponent(message);
+  }
+
+  reset(){
+    this.contactForm.reset();
+  }
+
+  stringEqualityValidator(targetString: string): ValidatorFn {
+    return (control: AbstractControl): ValidationErrors | null => {
+      const value = control.value;
+      if (value !== targetString) {
+        return { stringEquality: true };
+      }
+      return null;
+    };
   }
 }
