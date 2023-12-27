@@ -43,11 +43,19 @@
                 <div class="form-item">
                 <label for="name">Name* </label><br>
                 <input id="name" type="text" [formControl]="name">
+                @if(!name.valid && name.dirty){
+                    <br>
+                    <label for="name" style="color:red">This field is required</label>
+                }
                 </div>
                 
                 <div class="form-item">
                 <label for="company">Company / MCST: </label><br>
                 <input id="company" type="text" [formControl]="company">
+                @if(!company.valid && company.dirty){
+                    <br>
+                    <label for="company" style="color:red">This field is required</label>
+                }
                 </div>
             </div>
 

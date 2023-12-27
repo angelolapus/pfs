@@ -24,6 +24,7 @@ import { QualityAndPoliciesComponent } from './pages/quality-and-policies/qualit
 import { PropertiesComponent } from './pages/properties/properties.component';
 import { PropertyTitleComponent } from './pages/properties/properties-component/property-title/property-title.component';
 import { PropertyItemComponent } from './pages/properties/properties-component/property-item/property-item.component';
+import { CareersComponent } from './pages/careers/careers.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { PropertyItemComponent } from './pages/properties/properties-component/p
     PropertiesComponent,
     PropertyTitleComponent,
     PropertyItemComponent,
+    CareersComponent,
   ],
   imports: [
     BrowserModule,

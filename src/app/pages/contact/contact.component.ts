@@ -15,7 +15,7 @@ export class ContactComponent implements OnInit {
   verificationCode = new FormControl('',[Validators.required]);
   capthca = new FormControl('');
 
-  captchaValue = "71CQJX";
+  captchaValue = "";
 
   constructor(){
 
@@ -38,7 +38,9 @@ export class ContactComponent implements OnInit {
 }
 
   submit(){
-   this.sendMessage();
+    this.name.valid;
+    console.log(this.name.valid);
+  //  this.sendMessage();
     
   }
 
