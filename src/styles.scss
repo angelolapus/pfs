@@ -2851,7 +2851,8 @@ body {
 /* Landscape */
 
 //desktop and landscape of ipad mini
-@media screen and (orientation:landscape) and (min-width: 992px) {
+// @media screen and (orientation:landscape) and (min-width: 992px) {
+@media screen and (orientation:landscape) and (min-width: 667px) {
     /* Landscape styles here */
     /* Portrait styles here */
     .container {
