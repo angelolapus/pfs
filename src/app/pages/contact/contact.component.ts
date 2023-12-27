@@ -50,6 +50,6 @@ export class ContactComponent implements OnInit {
     + "\nCompany: " + this.company.value
     + "\nEmail: " + this.email.value
     + "\nPhone: " + this.phone.value
-    window.location.href = "mailto:angelolapus@gmail.com?subject=Inquiry&body="+ encodeURIComponent(message);
+    window.location.href = "mailto:contactme@pfspl.com.sg?subject=Inquiry&body="+ encodeURIComponent(message);
   }
 }
