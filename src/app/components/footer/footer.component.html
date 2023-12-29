@@ -2,14 +2,17 @@
 
     <div class="pfs-footer">
         <img class="pfs-footer-img" src="{{envPath}}/images/PFS-footer.png">
-        <p>© PFS. All rights reserved. Website by<br> Creative eWorld Pte Ltd.</p>
+        <p>© PFS. All rights reserved.
+         <!--Website by<br></p>-->
     </div>
 
     <div class="nav-footer-container">
         <div class="footer-nav">
             <a (click)="navigateFooter('quality')">Our Quality and Policies</a><br>
             <a  (click)="navigateFooter('careers')">Careers</a><br>
-            <a href="https://mx1.pfspl.com.sg/" target="_blank">Staff Login</a><br>
+            <a (click)="navigateFooter('contact')" target="_blank">Contact Us</a><br>
+            <!--<a href="https://mx1.pfspl.com.sg/" target="_blank">Staff Login</a><br>-->
+            <a (click)="navigateFooter('staff')" target="_blank">Staff Login</a><br>
         </div>
 
         <div class="footer-icons">

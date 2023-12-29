@@ -25,8 +25,12 @@ export class FooterComponent implements OnInit {
   navigateFooter(val:string){
     if(val =="quality"){
       this.router.navigateByUrl('/quality-and-policies');
-    }else{
+    }else if(val=='careers'){
       this.router.navigateByUrl('/careers');
+    }else if(val =='contact'){
+      this.router.navigateByUrl('/contact-us');
+    }else{
+      this.router.navigateByUrl('/staff-and-services');
     }
     
     document.body.scrollTop = 0; // For Safari

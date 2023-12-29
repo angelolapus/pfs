@@ -7,6 +7,7 @@ import { ServicesComponent } from './pages/services/services.component';
 import { QualityAndPoliciesComponent } from './pages/quality-and-policies/quality-and-policies.component';
 import { PropertiesComponent } from './pages/properties/properties.component';
 import { CareersComponent } from './pages/careers/careers.component';
+import { StaffServicesComponent } from './pages/staff-services/staff-services.component';
 
 const routes: Routes = [
   {path:'',redirectTo: '/home', pathMatch: 'full'},
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path:'quality-and-policies', component: QualityAndPoliciesComponent},
   {path:'properties', component: PropertiesComponent},
   {path:'careers', component: CareersComponent},
+  {path:'staff-and-services', component: StaffServicesComponent}
 ];
 
 @NgModule({
