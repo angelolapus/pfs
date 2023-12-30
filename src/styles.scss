@@ -2015,6 +2015,10 @@ body {
         height: 103px;
         z-index: 999;
     }
+    .collapse.navbar-collapse {
+        justify-content: flex-end;
+        top: 0;
+    }
     .otherPage .navbar {
         background-color: white;
     }

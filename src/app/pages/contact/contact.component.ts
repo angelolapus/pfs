@@ -18,7 +18,8 @@ export class ContactComponent implements OnInit {
 
   captchaValue = "";
 
-  phoneEmailRegex = /^(\d{10}|\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3}))$/;
+  emailRegex = /^(\d{10}|\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3}))$/;
+  singaporeMobileNumberRegex = /^[89]\d{7}$/;
   formError = false;
   constructor(fb:FormBuilder){
     this.captchaValue = this.rotateCaptcha(6);
@@ -39,14 +40,14 @@ export class ContactComponent implements OnInit {
         null,
         Validators.compose([
           Validators.required,
-          Validators.pattern(this.phoneEmailRegex),
+          Validators.pattern(this.emailRegex),
         ]),
       ],
       phone: [
         null,
         Validators.compose([
           Validators.required,
-          Validators.pattern(this.phoneEmailRegex),
+          Validators.pattern(this.singaporeMobileNumberRegex),
         ]),
       ],
       message: [
