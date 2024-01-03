@@ -116,6 +116,16 @@ body {
             user-select: none;
         }
     }
+    .navbar-collapse.show {
+        box-shadow: -1px 2px 5px black;
+    }
+    .staff-and-services,
+    .careers .quality,
+    .contact-us,
+    .about,
+    .services .labeled-banner-container h1 {
+        cursor: default;
+    }
 }
 
 
@@ -2968,7 +2978,7 @@ body {
             font-family: "DM Sans";
             font-size: 46PX;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 700;
             line-height: 60px;
         }
         //careers
@@ -3070,7 +3080,7 @@ body {
             font-family: "DM Sans";
             font-size: 46PX;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 700;
             line-height: 60px;
         }
         //staff-and-services
@@ -4141,7 +4151,7 @@ body {
             font-family: "DM Sans";
             font-size: 46PX;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 700;
             line-height: 60px;
         }
         //careers
@@ -4243,7 +4253,7 @@ body {
             font-family: "DM Sans";
             font-size: 46PX;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 700;
             line-height: 60px;
         }
         //staff-and-services
