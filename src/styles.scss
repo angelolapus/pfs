@@ -119,12 +119,18 @@ body {
     .navbar-collapse.show {
         box-shadow: -1px 2px 5px black;
     }
+    .servicesLink {
+        cursor: pointer;
+    }
     .staff-and-services,
     .careers .quality,
     .contact-us,
     .about,
     .services .labeled-banner-container h1 {
         cursor: default;
+    }
+    .home-card-collection .home-card-img-text-container .img-container {
+        position: relative;
     }
 }
 
@@ -353,6 +359,7 @@ body {
             background-color: #D3A450;
             opacity: 100%;
             position: absolute;
+            top: 0;
             right: 0;
             bottom: 106px;
             mix-blend-mode: multiply;
@@ -1304,6 +1311,7 @@ body {
             background-color: #D3A450;
             opacity: 100%;
             position: absolute;
+            top: 0;
             right: 0;
             bottom: 106px;
             mix-blend-mode: multiply;
@@ -2313,6 +2321,7 @@ body {
             background-color: #D3A450;
             opacity: 100%;
             position: absolute;
+            top: 0;
             right: 12px;
             bottom: 106px;
             mix-blend-mode: multiply;

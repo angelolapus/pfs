@@ -1,5 +1,5 @@
 import { DOCUMENT } from '@angular/common';
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, ElementRef, Inject, OnInit, Renderer2 } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs';
 
@@ -12,7 +12,7 @@ import { filter } from 'rxjs';
 export class AppComponent implements OnInit {
   title = 'pfs';
 
-  constructor(@Inject(DOCUMENT) private document:Document, private router:Router){
+  constructor(@Inject(DOCUMENT) private document:Document, private router:Router,private renderer: Renderer2, private elRef: ElementRef){
     
   }
 
@@ -40,21 +40,32 @@ export class AppComponent implements OnInit {
     );
 
 
-      let elements = this.document.querySelectorAll('.nav-link')
+    this.renderer.listen('document', 'click', (event: Event) => {
+      const clickedElement = event.target as HTMLElement;
 
-      elements.forEach(el => {
-        el.addEventListener('click', () => {
-          elements.forEach(el => el.classList.remove('active'))
-          el.classList.add('active')
+      if (!clickedElement.classList.contains('nav-link')) {
+        // The clicked element does not have the class '.nav-link'
+        // Add your logic here
+        console.log('Clicked element does not have .nav-link class');
+
+        const parentButton = this.elRef.nativeElement.querySelector('.servicesLink.active');
+        const subMenu = this.elRef.nativeElement.querySelector('.subnav-content.show');
+        if(subMenu){
+          subMenu.classList.remove('show');
+          parentButton.classList.remove('active');
+        }
+      }else{
+        clickedElement.classList.add('active')
 
           let subMenu = this.document.querySelector('.subnav-content');
           subMenu?.classList.remove('show');
-          if(el.classList.contains('servicesLink')){
+          if(clickedElement.classList.contains('servicesLink')){
            
             subMenu?.classList.add('show');
           }
-        });
-      })
+      }
+    });
+
   }
 
   removeActive(){
