@@ -26,6 +26,7 @@ import { PropertyTitleComponent } from './pages/properties/properties-component/
 import { PropertyItemComponent } from './pages/properties/properties-component/property-item/property-item.component';
 import { CareersComponent } from './pages/careers/careers.component';
 import { StaffServicesComponent } from './pages/staff-services/staff-services.component';
+import { UnavailableComponent } from './pages/unavailable/unavailable.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { StaffServicesComponent } from './pages/staff-services/staff-services.co
     PropertyItemComponent,
     CareersComponent,
     StaffServicesComponent,
+    UnavailableComponent,
   ],
   imports: [
     BrowserModule,

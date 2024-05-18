@@ -8,17 +8,24 @@ import { QualityAndPoliciesComponent } from './pages/quality-and-policies/qualit
 import { PropertiesComponent } from './pages/properties/properties.component';
 import { CareersComponent } from './pages/careers/careers.component';
 import { StaffServicesComponent } from './pages/staff-services/staff-services.component';
+import { UnavailableComponent } from './pages/unavailable/unavailable.component';
 
 const routes: Routes = [
   {path:'',redirectTo: '/home', pathMatch: 'full'},
   {path:'home', component: HomeComponent},
   {path:'about-us', component: AboutComponent},
+  {path:'About-Us', component: AboutComponent},
   {path:'services', component: ServicesComponent},
+  {path:'Facility-Management', component: ServicesComponent},
   {path:'contact-us', component: ContactComponent},
   {path:'quality-and-policies', component: QualityAndPoliciesComponent},
-  {path:'properties', component: PropertiesComponent},
+  {path:'properties', component: HomeComponent},//PropertiesComponent
   {path:'careers', component: CareersComponent},
-  {path:'staff-and-services', component: StaffServicesComponent}
+  {path:'Join-Us', component: CareersComponent},
+  {path:'staff-and-services', component: StaffServicesComponent},
+  {path:'Call-Centre', component: StaffServicesComponent},
+  {path:'not-found', component: UnavailableComponent},
+  {path:'**', redirectTo: '/not-found'},
 ];
 
 @NgModule({
